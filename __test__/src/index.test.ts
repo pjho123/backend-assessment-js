@@ -15,11 +15,10 @@ describe("Worker", () => {
 		await worker.stop();
 	});
 
-	it("should return Hello World", async () => {
-		const resp = await worker.fetch();
-		if (resp) {
-			const text = await resp.text();
-			expect(text).toMatchInlineSnapshot(`"Hello World!"`);
-		}
+	it("should return 404 not found if route is invalid", async () => {
+		const resp = await worker.fetch("http://localhost:8787/api/invalid");
+
+		const jsonResponse = await resp.json();
+		expect(jsonResponse).toMatchSnapshot();
 	});
 });

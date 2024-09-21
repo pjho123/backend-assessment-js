@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Worker > should return 404 not found if route is invalid 1`] = `
+{
+  "error": "Not Found",
+  "status": 404,
+}
+`;

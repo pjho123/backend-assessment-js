@@ -1,3 +1,12 @@
 name = "ma-project"
 main = "src/index.ts"
 compatibility_date = "2023-04-18"
+workers_dev = false
+compatibility_flags = ["experimental:nodejs_compat_v2"]
+
+[vars]
+PGHOST = "ep-cold-meadow-a78on0ae-pooler.ap-southeast-2.aws.neon.tech"
+PGDATABASE = "assessment-db"
+PGUSER = "assessment-db_owner"
+PGPASSWORD = "CnkBFR9sa2df"
+ENDPOINT_ID = "ep-cold-meadow-a78on0ae-pooler"

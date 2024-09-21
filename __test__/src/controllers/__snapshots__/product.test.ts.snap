@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Worker > Controller for DELETE /api/products > should return 200 1`] = `
+{
+  "message": "Product has been successfully deleted.",
+}
+`;
+
+exports[`Worker > Controller for GET /api/products > should return 200 1`] = `
+{
+  "message": "Third Party Data has been added to the DB.",
+}
+`;
+
+exports[`Worker > Controller for POST /api/products > should return 200 1`] = `
+{
+  "products": [
+    {
+      "CreatedAt": "Invalid Date",
+      "ProductCode": "sample-sku",
+      "ProductID": 11111,
+      "Tags": "tags",
+      "Title": "Sample Product",
+      "UpdatedAt": "",
+    },
+  ],
+}
+`;
+
+exports[`Worker > Controller for PUT /api/products > should return 200 1`] = `
+{
+  "products": [
+    {
+      "CreatedAt": "Invalid Date",
+      "ProductCode": "sample-sku",
+      "ProductID": 11111,
+      "Tags": "tags",
+      "Title": "Sample Product",
+      "UpdatedAt": "",
+    },
+  ],
+}
+`;

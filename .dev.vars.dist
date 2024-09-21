@@ -1,0 +1,5 @@
+PGHOST='ep-cold-meadow-a78on0ae-pooler.ap-southeast-2.aws.neon.tech'
+PGDATABASE='assessment-db'
+PGUSER='assessment-db_owner'
+PGPASSWORD='CnkBFR9sa2df'
+ENDPOINT_ID='ep-cold-meadow-a78on0ae-pooler'
