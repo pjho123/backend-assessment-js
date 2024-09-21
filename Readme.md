@@ -13,8 +13,7 @@ Then the app will run in PORT 8787
 
 ### Exported SQL
 
-
-here's the exported sql after running the following API
+here's the exported sql ![sql](product.sql) after running the following API
 
 1. GET http://localhost:8787/api/products
 2. POST http://localhost:8787/api/products
@@ -23,3 +22,4 @@ here's the exported sql after running the following API
 
 ### DB Credentials
 
+Can be found in ![dev.var.dist](.dev.vars.dist)
