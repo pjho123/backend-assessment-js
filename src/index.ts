@@ -6,6 +6,7 @@ export interface Env {
 	PGUSER: string,
 	PGPASSWORD: string,
 	ENDPOINT_ID: string,
+	API_KEY: string
 }
 
 export default {

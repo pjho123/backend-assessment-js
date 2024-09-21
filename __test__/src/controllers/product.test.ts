@@ -8,7 +8,6 @@ import { IProduct, TDeleteProductRequest } from "../../../src/interfaces/product
 
 describe("Worker", () => {
 	let worker: UnstableDevWorker;
-
 	beforeAll(async () => {
 		worker = await unstable_dev("src/index.ts", {
 			experimental: { disableExperimentalWarning: true },
@@ -19,25 +18,12 @@ describe("Worker", () => {
 			}));
 			return { Person };
 		});
-		// vi.mock('../../../src/services/product-service', () => {
-		// 	// const ProductService = vi.fn();
-		// 	// ProductService.prototype.createBulk = vi.fn(() => 15);
-		// 	const ProductService = vi.fn(() => ({
-		// 		getAll: vi.fn().mockResolvedValue(true),
-		// 		getById: vi.fn().mockResolvedValue(true),
-		// 		getByIds: vi.fn().mockResolvedValue(true),
-		// 		updateProductById: vi.fn().mockResolvedValue(true),
-		// 		createBulk: vi.fn().mockResolvedValue(true),
-		// 		delete: vi.fn().mockResolvedValue(true),
-		// 	}));
-		// 	return { default: ProductService };
-		// });
 		const product: IProduct = {
 			id: 11111,
 			title: 'Sample Product',
 			tags: 'tags',
-			created_at: '',
-			updated_at: '',
+			updated_at: '2024-09-21 18:08:26.828',
+			created_at: '2024-09-21 18:08:26.828',
 			sku: 'sample-sku',
 		};
 		vi.spyOn(ProductService, 'getAll').mockResolvedValue([product]);
@@ -54,8 +40,8 @@ describe("Worker", () => {
 				id: 111111,
 				title: 'variant-title1',
 				sku: 'SKU1',
-				updated_at: '2024-07-28T20:15:18-04:00',
-				created_at: '2024-07-28T20:14:32-04:00',
+				updated_at: '2024-09-21 18:08:26.828',
+				created_at: '2024-09-21 18:08:26.828',
 			}]
 		}]);
 		vi.spyOn(ThirdPartyDataSource, 'getProductData').mockResolvedValue([{

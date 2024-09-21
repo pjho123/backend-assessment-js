@@ -16,12 +16,12 @@ exports[`Worker > Controller for POST /api/products > should return 200 1`] = `
 {
   "products": [
     {
-      "CreatedAt": "Invalid Date",
+      "CreatedAt": "Sat, 21 Sep 2024 10:08:26 GMT",
       "ProductCode": "sample-sku",
       "ProductID": 11111,
       "Tags": "tags",
       "Title": "Sample Product",
-      "UpdatedAt": "",
+      "UpdatedAt": "Sat, 21 Sep 2024 10:08:26 GMT",
     },
   ],
 }
@@ -31,12 +31,12 @@ exports[`Worker > Controller for PUT /api/products > should return 200 1`] = `
 {
   "products": [
     {
-      "CreatedAt": "Invalid Date",
+      "CreatedAt": "Sat, 21 Sep 2024 10:08:26 GMT",
       "ProductCode": "sample-sku",
       "ProductID": 11111,
       "Tags": "tags",
       "Title": "Sample Product",
-      "UpdatedAt": "",
+      "UpdatedAt": "Sat, 21 Sep 2024 10:08:26 GMT",
     },
   ],
 }

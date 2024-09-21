@@ -1,13 +1,13 @@
 import { AutoRouter, cors } from 'itty-router';
 import ProductsController from '../controllers/product';
-import validateUserToken from '../middlewares/validate-token';
+import validateApiKey from '../middlewares/validate-api-key';
 import dbConnect from '../middlewares/db-connect';
 import { logError, logRequest, logResponse } from '../middlewares/log-middleware';
 
 const { preflight, corsify } = cors()
 
 const router = AutoRouter({
-  before: [preflight, logRequest, validateUserToken, dbConnect],
+  before: [preflight, logRequest, validateApiKey, dbConnect],
   finally: [logResponse, corsify],
   catch: logError,
 });

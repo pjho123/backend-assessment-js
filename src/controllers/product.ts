@@ -1,4 +1,4 @@
-import { StatusError } from "itty-router";
+import { error } from "itty-router";
 import { TDeleteProductRequest } from "../interfaces/product";
 import ProductFormatter from "../lib/product-formatter";
 import ThirdPartyDataSource from "../lib/thirdparty-datasource";
@@ -66,7 +66,7 @@ class ProductsController {
     const product = await ProductService.getById(product_id);
 
     if (!product) {
-      throw new StatusError(400, 'Product not found.')
+      return error(400, 'Product not found.');
     }
 
     await ProductService.delete(product_id);
